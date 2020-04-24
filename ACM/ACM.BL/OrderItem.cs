@@ -50,6 +50,7 @@ namespace ACM.BL
             if (PurchasePrice == null) return false;
             if (ProductId <= 0) return false;
             if (Quantity <= 0) return false;
+            
             return true;
         }
     }

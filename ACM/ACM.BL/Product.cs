@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    class Product
+    public class Product
     {
         public Product()
         {
@@ -17,32 +17,10 @@ namespace ACM.BL
         {
 
         }
-
         public decimal? CurrentPrice { get; set; }
         public string ProductDescription { get; set; }
         public int ProductId { get; set; }
         public string ProductName { get; set; }
-
-        /// <summary>
-        /// Retrieve one product.
-        /// </summary>
-        /// <param name="productId"></param>
-        /// <returns></returns>
-        public Product Retrieve(int productId)
-        {
-            return new Product();
-
-        }
-
-        /// <summary>
-        /// Save the current product.
-        /// </summary>
-        /// <returns></returns>
-        public bool Save()
-        {
-            return true;
-
-        }
 
         /// <summary>
         /// Validate the product data.

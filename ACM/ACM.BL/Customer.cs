@@ -23,6 +23,8 @@ namespace ACM.BL
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
+        public Address HomeAddress;
+        public Address WorkAddress;
         public string FullName
         {
             get
@@ -53,33 +55,7 @@ namespace ACM.BL
             return true;
         }
 
-        /// <summary>
-        /// Save the current customer.
-        /// </summary>
-        /// <returns></returns>
-        public bool Save()
-        {
-            return true;
-        }
-
-        /// <summary>
-        /// Retrieve one customer.
-        /// </summary>
-        /// <returns></returns>
-        public Customer Retrieve(int customerId)
-        {
-            return new Customer();
-        }
-
-        /// <summary>
-        /// Retrieve allcustomer.
-        /// </summary>
-        /// <returns></returns>
-        public List<Customer> Retrieve()
-        {
-            return new List<Customer>();
-        }
-
+        
         public static int InstanceCount { get; set; }
 
     }
