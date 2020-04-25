@@ -35,8 +35,19 @@ namespace ACM.BL
         /// Save the current product.
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Product product)
         {
+            if (!product.HasChanges || !product.IsValid) return false;
+            
+            if (product.IsNew)
+            {
+                //store
+            }
+            else
+            {
+                //update
+            }
+
             return true;
         }
     }

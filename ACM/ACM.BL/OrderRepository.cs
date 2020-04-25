@@ -32,8 +32,19 @@ namespace ACM.BL
         /// Save the current order.
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Order order)
         {
+            if (!order.HasChanges || !order.IsValid) return false;
+
+            if (order.IsNew)
+            {
+                //store
+            }
+            else
+            {
+                //update
+            }
+
             return true;
         }
     }
