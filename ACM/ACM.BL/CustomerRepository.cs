@@ -19,8 +19,19 @@ namespace ACM.BL
         /// Save the current customer.
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Customer customer)
         {
+            if (!customer.HasChanges || !customer.IsValid) return false;
+
+            if (customer.IsNew)
+            {
+                //store
+            }
+            else
+            {
+                //update
+            }
+
             return true;
         }
 
