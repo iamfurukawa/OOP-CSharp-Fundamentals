@@ -17,14 +17,14 @@ namespace ACM.BL
         public Customer(int customerId)
         {
             CustomerId = customerId;
+            AddressList = new List<Address>();
         }
 
         public int CustomerId { get; private set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
-        public Address HomeAddress;
-        public Address WorkAddress;
+        public List<Address> AddressList { get; set; }
         public string FullName
         {
             get
